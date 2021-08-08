@@ -8,7 +8,7 @@ const indexedDB =
 // create a variable to hold db connection
 let db;
 // establish a conection to indexedDB called "budget" and set it to version 1.
-const request = indexedDB.open("budget", 1);
+const request = indexedDB.open("my-budget-tracker", 1);
 
 request.onupgradeneeded = (event) => {
   // reeference to the database
